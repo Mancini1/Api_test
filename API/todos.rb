@@ -11,7 +11,6 @@ module Todos
     end
   end
 
-  
   def self.specific_todos(id)
     begin
       return RestClient.get 'http://lacedeamon.spartaglobal.com/todos/' + id.to_s
